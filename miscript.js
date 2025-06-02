@@ -14,7 +14,6 @@ const callAPI = () => {
             console.error("Error al llamar a la API:", error);
         });
 };
-apiButton.addEventListener("click", callAPI);
 
 function buscar() {
   const texto = document.getElementById("cajaBusqueda").value.toLowerCase(); // nombre del Pokémon
@@ -44,11 +43,14 @@ function buscar() {
     });
 }
 
-cajaBusqueda.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-        buscar();
-    }
-});
+const cajaBusqueda = document.getElementById("cajaBusqueda");
+if (cajaBusqueda) {
+    cajaBusqueda.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            buscar();
+        }
+    });
+}
 
 function enviar_formulario(){
 //Obtiene el radio seleccionado
