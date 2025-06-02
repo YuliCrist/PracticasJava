@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+    .buscador {
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 4px;
+      width: 250px;
+      font-size: 15px;
+    }
+    button {
+      padding: 4px 16px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+    <div id="cabecera">
+        <h1>JavaScript</h1>
+    </div>
+    <div id="menu">
+        <a href="index.html" class="item_menu">Inicio</a>
+        <a href="eventos.html" class="item_menu">Eventos</a>
+        <a href="css.html" class="item_menu">CSS</a>
+        <a href="form.html" class="item_menu">Form</a>
+        <a href="funciones.html" class="item_menu">Funciones</a>
+        <a href="location.html" class="item_menu">location</a>
+        <a href="windows.html" class="item_menu">windows</a>
+        <a href="DOM.html" class="item_menu">DOM</a>
+        <a href="Animaciones.html" class="item_menu">Animaciones</a>
+        <a href="juego.html" class="item_menu">Juego</a>
+        <a href="pokeApi.html" class="item_menu item_activo">pokeApi</a>
+    </div>
+
+    <div class="buscador">
+    <input type="text" id="cajaBusqueda" placeholder="Escribe tu búsqueda">
+    <button onclick="buscar()">Buscar</button>
+  </div>
+
+  <div id="resultado"></div>
+  <img id="imagenResultado" src="" alt="" style="display: none;"> 
+    <pre id="apiData"></pre>
+    <p id="base_experience"></p>
+
+    <script src="miscript.js"></script>
+</body>
+</html>

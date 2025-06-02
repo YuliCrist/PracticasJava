@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        #div_estilo1{
+            background-color: red;
+            font-weight: bold;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecera">
+        <h1>JavaScript</h1>
+    </div>
+    <div id="menu">
+        <a href="index.html" class="item_menu">Inicio</a>
+        <a href="eventos.html" class="item_menu item_activo">Eventos</a>
+        <a href="css.html" class="item_menu">CSS</a>
+        <a href="form.html" class="item_menu">form</a>
+        <a href="funciones.html" class="item_menu">funciones</a>
+        <a href="location.html" class="item_menu">location</a>
+        <a href="windows.html" class="item_menu">windows</a>
+        <a href="dom.html" class="item_menu">DOM</a>
+        <a href="animaciones.html" class="item_menu">Animaciones</a>
+        <a href="juego.html" class="item_menu">Juego</a>
+        <a href="pokeApi.html" class="item_menu">pokeApi</a>
+    </div>
+
+    <input type="button" value="Click" onclick="alert('hola')">
+    <br><br>
+    <input type="button" value="Doble click" ondblclick="alert('holaa')">
+    <br><br>
+    <input type="button" value="Onmouseover" onmouseover="alert('hola')">
+    <br><br>
+    <input type="text" name="" id="" onkeydown="alert('Se ha pulsado una tecla')">
+    <br><br>
+
+    <input type="button" value="Presione el botón" id="boton_script">
+    
+</body>
+</html>
+
+<script>
+    document.getElementById("boton_script").addEventListener("click", function(){
+        alert("Ha presionado un botón")
+    });
+</script>

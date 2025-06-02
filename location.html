@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <script src="miscript.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="cabecera">
+        <h1>JavaScript</h1>
+    </div>
+    <div id="menu">
+        <a href="index.html" class="item_menu">Inicio</a>
+        <a href="eventos.html" class="item_menu">Eventos</a>
+        <a href="css.html" class="item_menu">CSS</a>
+        <a href="form.html" class="item_menu">form</a>
+        <a href="funciones.html" class="item_menu">funciones</a>
+        <a href="location.html" class="item_menu item_activo">location</a>
+        <a href="windows.html" class="item_menu">windows</a>
+        <a href="dom.html" class="item_menu">DOM</a>
+        <a href="animaciones.html" class="item_menu">Animaciones</a>
+        <a href="juego.html" class="item_menu">Juego</a>
+        <a href="pokeApi.html" class="item_menu">pokeApi</a>
+    </div>
+     <div id="demo"></div>
+    <script>
+        
+
+        document.getElementById("demo").innerHTML = "location is" + location.href +"<br>";
+        document.getElementById("demo").innerHTML += "hostname is" + location.hostname +"<br>";
+        document.getElementById("demo").innerHTML += "path is" + location.pathname +"<br><br><br>";
+
+        //funciona como si dieras clic en un enlace
+        //location.href = "https://www.google.com";
+
+        //setTimeout("location.href='index.php'",5000);4
+
+    </script>
+
+    
+</body>
+</html>
